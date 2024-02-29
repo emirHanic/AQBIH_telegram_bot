@@ -19,6 +19,20 @@ Welcome to **AQBIH_Bot**, your reliable source for real-time air pollution data 
 
 <!-- 🌐 Educational Insights: BosniaAirBot not only provides data but also offers educational insights into the impact of air pollution on health. Learn about the pollutants, their sources, and ways to minimize exposure. -->
 
+## ⚙️ How to Install:
+
+Create virtual enviroment **.venv** on your machine 
+
+    python3 -m venv .venv
+
+Activate the enviroment
+
+    source .venv/bin/activate
+
+Install packages from requrements.txt file
+
+    pip install -r requirements.txt
+
 ## 📖 How to Use:
 
 - Start a chat with @aqbih_bot on Telegram.
