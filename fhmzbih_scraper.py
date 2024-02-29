@@ -8,7 +8,7 @@ load_dotenv()
 # Access environment variables using os.environ
 url = os.environ.get('FHMZBIH')
 
-AQ_value = requests.get(url, proxies=proxies)
+AQ_value = requests.get(url)
 AQ_value_soup = bs4.BeautifulSoup(AQ_value.text, 'lxml')
 
 i = 0
