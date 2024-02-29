@@ -8,11 +8,6 @@ load_dotenv()
 # Access environment variables using os.environ
 url = os.environ.get('FHMZBIH')
 
-proxies = {
-    'http': 'http://93.157.196.58:8080'
-    # 'https': 'http://proxyprovider.com:2000',
-}
-
 AQ_value = requests.get(url, proxies=proxies)
 AQ_value_soup = bs4.BeautifulSoup(AQ_value.text, 'lxml')
 
@@ -147,5 +142,3 @@ class Lukavac:
         
         self.centar_pm10 = AQ_value_soup.select('tr td')[301].text
         self.centar_pm25 = AQ_value_soup.select('tr td')[302].text
-
-print (Lukavac().centar_pm10)
